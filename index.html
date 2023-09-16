@@ -326,14 +326,15 @@
                         <a href="https://aclanthology.org/2023.findings-acl.146/">paper</a>
                         <p></p>
                         <p>
-                            Adversarial training, a strong algorithm to enhance model robustness, is typically more
-                            expensive than traditional fine-tuning because of the necessity to generate adversarial
-                            examples via gradient descent.
-                            Delving into the optimization process of adversarial training,
-                            we find that robust connectivity patterns emerge in the early training phase (typically
-                            0.15~0.3 epochs), far before parameters converge.
-                            Inspired by this finding, we dig out <strong>robust early-bird tickets (i.e.,
-                            subnetworks)</strong> to develop an efficient adversarial training method.
+
+                            In this paper, we show that robust and non-robust instances in the training dataset,
+                            though are both important for test performance, have contrary impacts on robustness,
+                            which makes it possible to build a highly robust model by leveraging the training dataset in a more effective way.
+                            We propose a new method that can distinguish between robust instances from non-robust ones according to the model’s sensitivity
+                            to perturbations on individual instances during training.
+                            Surprisingly, we find that the model under standard training easily overfits the robust instances
+                            by relying on their simple patterns before the model completely learns their robust features.
+                            Finally, we propose a new mitigation algorithm to further release the potential of robust instances.
                         </p>
                     </td>
                 </tr>
