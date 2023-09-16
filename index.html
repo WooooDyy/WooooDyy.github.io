@@ -3,14 +3,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>Zhiheng Xi</title>
+    <title>Zhiheng Xi (奚志恒)</title>
 
     <meta name="author" content="Zhiheng Xi">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<!--    <link rel="icon"-->
+<!--          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">-->
+    <link rel="icon" type="image/jpg" href="images/Mourinho.jpg">
 </head>
 
 <body>
@@ -334,6 +335,50 @@
                             0.15~0.3 epochs), far before parameters converge.
                             Inspired by this finding, we dig out <strong>robust early-bird tickets (i.e.,
                             subnetworks)</strong> to develop an efficient adversarial training method.
+                        </p>
+                    </td>
+                </tr>
+                
+                
+                
+                <tr onmouseout="rlhf_ppo_stop()" onmouseover="rlhf_ppo_start()">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
+                        <div class="one">
+                            <div class="two" id='rlhf_ppo_image'>
+                                <img src='images/rlhf_ppo.jpg' width="190">
+                            </div>
+                            <img src='images/rlhf_ppo.jpg' width="190">
+                        </div>
+                        <script type="text/javascript">
+                            function rlhf_ppo_start() {
+                                document.getElementById('rlhf_ppo_image').style.opacity = "1";
+                            }
+
+                            function rlhf_ppo_stop() {
+                                document.getElementById('rlhf_ppo_image').style.opacity = "0";
+                            }
+
+                            rlhf_ppo_stop()
+                        </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2307.04964">
+                            <span class="papertitle">Secrets of RLHF in Large Language Models Part I: PPO</span>
+                        </a>
+                        <br>
+                        Rui Zheng, Shihan Dou, Songyang Gao, Yuan Hua, Wei Shen, Binghai Wang, Yan Liu, Senjie Jin, Qin Liu, Yuhao Zhou, Limao Xiong, Lu Chen, <strong>Zhiheng Xi</strong>, Nuo Xu, Wenbin Lai, Minghao Zhu, Cheng Chang, Zhangyue Yin,
+                        Rongxiang Weng, Wensen Cheng, Haoran Huang, Tianxiang Sun, Hang Yan, Tao Gui, Qi Zhang, Xipeng Qiu, Xuanjing Huang
+                        <br>
+                        <em>Preprint.</em> July, 2023.
+                        <br>
+                        <a href="https://arxiv.org/abs/2307.04964">codes</a>
+                        /
+                        <a href="https://arxiv.org/abs/2307.04964">paper</a>
+                        <p></p>
+                        <p>
+                            In this technical report, we dissect the framework of RLHF, re-evaluate the inner workings of PPO,
+                            and explore how the parts comprising PPO algorithms impact policy agent training. We identify policy constraints being the key factor for the effective implementation of the PPO algorithm. Therefore, we explore the PPO-max, an advanced version of PPO algorithm, to efficiently improve the training stability of the policy model.
+                            Based on our main results, we perform a comprehensive analysis of RLHF abilities compared with SFT models and ChatGPT.
                         </p>
                     </td>
                 </tr>
