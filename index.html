@@ -79,6 +79,62 @@
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
 
+                <tr onmouseout="agentgym_stop()" onmouseover="agentgym_start()">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
+                        <div class="one">
+                            <div class="two" id='agentgym_image'>
+                                <img src='images/agentgym_image.jpg' width="190">
+                            </div>
+                            <img src='images/agentgym_image.jpg' width="190">
+                        </div>
+                        <script type="text/javascript">
+                            function agentgym_start() {
+                                document.getElementById('agentgym_image').style.opacity = "1";
+                            }
+
+                            function agentgym_stop() {
+                                document.getElementById('agentgym_image').style.opacity = "0";
+                            }
+
+                            agentgym_stop()
+                        </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2406.04151">
+                            <span class="papertitle">AgentGym: Evolving Large Language Model-based Agents across Diverse Environments</span>
+                        </a>
+                        <br>
+                        <strong>Zhiheng Xi</strong>, Yiwen Ding, Wenxiang Chen, Boyang Hong, Honglin Guo, Junzhe Wang, Dingwen Yang, Chenyang Liao, Xin Guo, Wei He, Songyang Gao, Lu Chen, Rui Zheng, Yicheng Zou, Tao Gui, Qi Zhang, Xipeng Qiu, Xuanjing Huang, Zuxuan Wu, Yu-Gang Jiang
+
+                        <br>
+                        <em>Preprint.</em> June, 2024
+
+                        <br>
+                        <a href="https://agentgym.github.io/">project page</a> /
+                        <a href="https://github.com/WooooDyy/AgentGym">codes and platform</a> /
+                        <a href="https://arxiv.org/abs/2406.04151">paper</a> /
+                        <a href="https://huggingface.co/datasets/AgentGym/AgentTraj-L">dataset</a> /
+                        <a href="https://huggingface.co/datasets/AgentGym/AgentEval">benchmark</a> /
+                        <a href="https://huggingface.co/AgentGym/AgentEvol-7B">model</a>
+
+                        <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
+
+
+                        <p></p>
+                        <p>
+<!--                            In this paper, we take the first step towards building generally-capable LLM-based agents with self-evolution ability.-->
+                            We propose <strong>AgentGym</strong>, a framework designed to help the community easily evaluate and develop generally-capable LLM-based agents. It features diverse interactive environments and tasks with a unified format. It supports real-time feedback and concurrency, and is easily scalable.
+                            It also includes a high-quality trajectory set <strong>AgentTraj</strong> and a benchmark suite <strong>AgentEval</strong>.
+<!--                            In this paper, we propose <strong>\(R^3\)</strong>:-->
+<!--                            Learning Reasoning through Reverse Curriculum Reinforcement Learning (RL),-->
+<!--                            a novel method that employs only outcome supervision to achieve the benefits of process supervision for large language models.-->
+
+                        </p>
+                        <p>
+                            To study the evolution potential of general LLM-based agents, we propose a novel method, <strong>AgentEvol</strong>, to investigate the potential of agent self-evolution beyond previously seen data across tasks and environments.
+                        </p>
+                    </td>
+                </tr>
 
                 <tr onmouseout="R3_stop()" onmouseover="R3_start()">
                     <td style="padding:20px;width:30%;vertical-align:middle">
@@ -676,7 +732,7 @@
                                     <br>
                                 </p>
                                 <div style="float:left;">
-                                    Updated at May 2024
+                                    Updated at June 2024
                                 </div>
                                 <div style="float:right;">
                                     Thanks <a href="https://jonbarron.info">Jon Barron</a> for this fantastic template!
