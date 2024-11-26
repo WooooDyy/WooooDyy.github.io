@@ -71,8 +71,8 @@
                         <h2>Research</h2>
                         <p>
                             I have general interest in deep learning, natural language processing, and robust machine
-                            learning. Recently, I focus my research on large language models (LLMs), LLM reasoning, LLM-based
-                            agents, and LLM Alignment.
+                            learning. Recently, I focus my research on large language models (LLMs), LLM reasoning, and LLM-based
+                            agents.
                             <!-- Representative papers are <span class="highlight">highlighted</span>. -->
                         </p>
                     </td>
@@ -86,7 +86,7 @@
                 <tbody>
 
                     <tr onmouseout="mathcritique_stop()" onmouseover="mathcritique_start()">
-                        <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                        <td style="padding:20px;width:30%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='mathcritique_image.jpg'>
                                     <img src='images/mathcritique_image.jpg' width="190">
@@ -104,8 +104,8 @@
     
                                 mathcritique_stop()
                             </script>
-                        </td> -->
-                        <td style="padding:20px;width:100%;vertical-align:middle">
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
                             <a href="https://arxiv.org/abs/2411.16579">
                                 <span class="papertitle">Enhancing LLM Reasoning via Critique Models with Test-Time and Training-Time Supervision</span>
                             </a>
@@ -118,122 +118,25 @@
                             <a href="https://mathcritique.github.io/">project page</a> /
                             <a href="https://github.com/WooooDyy/MathCritique">codes</a> /
                             <a href="https://arxiv.org/abs/2411.16579">paper</a> /
-                            <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k">dataset</a> 
+                            <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k">dataset</a> /
     
                             <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
     
     
-                            <!-- <p></p> -->
-                            <!-- <p> -->
-                                <!-- Training large language models (LLMs) to spend more time thinking and reflection before responding is crucial for effectively solving complex reasoning tasks in fields such as science, coding, and mathematics. However, the effectiveness of mechanisms like self-reflection and self-correction depends on the model's capacity to accurately assess its own performance, which can be limited by factors such as initial accuracy, question difficulty, and the lack of external feedback. In this paper, we delve into a two-player paradigm that separates the roles of reasoning and critique models, where the critique model provides step-level feedback to supervise the reasoning (actor) model during both test-time and training-time. We first propose AutoMathCritique, an automated and scalable framework for collecting critique data, resulting in a dataset of $76,321$ responses paired with step-level feedback. Fine-tuning language models with this dataset enables them to generate natural language feedback for mathematical reasoning. We demonstrate that the critique models consistently improve the actor's performance on difficult queries at test-time, especially when scaling up inference-time computation. Motivated by these findings, we introduce the critique-based supervision to the actor's self-training process, and propose a critique-in-the-loop self-improvement method. Experiments show that the method improves the actor's exploration efficiency and solution diversity, especially on challenging queries, leading to a stronger reasoning model. Lastly, we take the preliminary step to explore training self-talk reasoning models via critique supervision and showcase their potential. -->
+                            <p></p>
+                            <p>
+                                Training large language models (LLMs) to spend more time thinking and reflection before responding is crucial for effectively solving complex reasoning tasks in fields such as science, coding, and mathematics. However, the effectiveness of mechanisms like self-reflection and self-correction depends on the model's capacity to accurately assess its own performance, which can be limited by factors such as initial accuracy, question difficulty, and the lack of external feedback. In this paper, we delve into a two-player paradigm that separates the roles of reasoning and critique models, where the critique model provides step-level feedback to supervise the reasoning (actor) model during both test-time and training-time. We first propose AutoMathCritique, an automated and scalable framework for collecting critique data, resulting in a dataset of $76,321$ responses paired with step-level feedback. Fine-tuning language models with this dataset enables them to generate natural language feedback for mathematical reasoning. We demonstrate that the critique models consistently improve the actor's performance on difficult queries at test-time, especially when scaling up inference-time computation. Motivated by these findings, we introduce the critique-based supervision to the actor's self-training process, and propose a critique-in-the-loop self-improvement method. Experiments show that the method improves the actor's exploration efficiency and solution diversity, especially on challenging queries, leading to a stronger reasoning model. Lastly, we take the preliminary step to explore training self-talk reasoning models via critique supervision and showcase their potential.
     
-                            <!-- </p> -->
-                            <!-- <p>
-                            </p> -->
+                            </p>
+                            <p>
+                            </p>
                         </td>
                     </tr>
-
-
-                    <tr onmouseout="GSI_stop()" onmouseover="GSI_start()">
-                        <!-- <td style="padding:20px;width:30%;vertical-align:middle">
-                            <div class="one">
-                                <div class="two" id='mathcritique_image.jpg'>
-                                    <img src='images/mathcritique_image.jpg' width="190">
-                                </div>
-                                <img src='images/mathcritique_image.jpg' width="190">
-                            </div>
-                            <script type="text/javascript">
-                                function mathcritique_start() {
-                                    document.getElementById('mathcritique_image').style.opacity = "1";
-                                }
-    
-                                function mathcritique_stop() {
-                                    document.getElementById('mathcritique_image').style.opacity = "0";
-                                }
-    
-                                mathcritique_stop()
-                            </script>
-                        </td> -->
-                        <td style="padding:20px;width:100%;vertical-align:middle">
-                            <a href="https://arxiv.org/abs/2411.16579">
-                                <span class="papertitle">Mitigating Tail Narrowing in LLM Self-Improvement via Socratic-Guided Sampling</span>
-                            </a>
-                            <br>
-                            Yiwen Ding*, <strong>Zhiheng Xi* (Co-first Author)</strong>, Wei He, Zhuoyuan Li, Yitao Zhai, Xiaowei Shi, Xunliang Cai, Tao Gui, Qi Zhang, Xuanjing Huang       <br>
-                            <em>Preprint.</em> Nov, 2024
-    
-                            <br>
-                            <!-- <a href="https://mathcritique.github.io/">project page</a> / -->
-                            <a href="https://github.com/Yiwen-Ding/Guided-Self-Improvement">codes</a> /
-                            <a href="https://arxiv.org/abs/2411.00750">paper</a> 
-                            <!-- <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k">dataset</a> / -->
-    
-                            <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
-    
-    
-                            <!-- <p></p> -->
-                            <!-- <p> -->
-                                <!-- Training large language models (LLMs) to spend more time thinking and reflection before responding is crucial for effectively solving complex reasoning tasks in fields such as science, coding, and mathematics. However, the effectiveness of mechanisms like self-reflection and self-correction depends on the model's capacity to accurately assess its own performance, which can be limited by factors such as initial accuracy, question difficulty, and the lack of external feedback. In this paper, we delve into a two-player paradigm that separates the roles of reasoning and critique models, where the critique model provides step-level feedback to supervise the reasoning (actor) model during both test-time and training-time. We first propose AutoMathCritique, an automated and scalable framework for collecting critique data, resulting in a dataset of $76,321$ responses paired with step-level feedback. Fine-tuning language models with this dataset enables them to generate natural language feedback for mathematical reasoning. We demonstrate that the critique models consistently improve the actor's performance on difficult queries at test-time, especially when scaling up inference-time computation. Motivated by these findings, we introduce the critique-based supervision to the actor's self-training process, and propose a critique-in-the-loop self-improvement method. Experiments show that the method improves the actor's exploration efficiency and solution diversity, especially on challenging queries, leading to a stronger reasoning model. Lastly, we take the preliminary step to explore training self-talk reasoning models via critique supervision and showcase their potential. -->
-    
-                            <!-- </p> -->
-                            <!-- <p>
-                            </p> -->
-                        </td>
-                    </tr>
-
-                    <tr onmouseout="ReachQA_stop()" onmouseover="ReachQA_start()">
-                        <!-- <td style="padding:20px;width:30%;vertical-align:middle">
-                            <div class="one">
-                                <div class="two" id='mathcritique_image.jpg'>
-                                    <img src='images/mathcritique_image.jpg' width="190">
-                                </div>
-                                <img src='images/mathcritique_image.jpg' width="190">
-                            </div>
-                            <script type="text/javascript">
-                                function mathcritique_start() {
-                                    document.getElementById('mathcritique_image').style.opacity = "1";
-                                }
-    
-                                function mathcritique_stop() {
-                                    document.getElementById('mathcritique_image').style.opacity = "0";
-                                }
-    
-                                mathcritique_stop()
-                            </script>
-                        </td> -->
-                        <td style="padding:20px;width:100%;vertical-align:middle">
-                            <a href="https://arxiv.org/abs/2410.18798">
-                                <span class="papertitle">Distill Visual Chart Reasoning Ability from LLMs to MLLMs
-                                </span>
-                            </a>
-                            <br>
-                            Wei He*, <strong>Zhiheng Xi* (Co-first Author)</strong>, Wanxu Zhao*, Xiaoran Fan, Yiwen Ding, Zifei Shan, Tao Gui, Qi Zhang, Xuanjing Huang                           
-                            <em>Preprint.</em> Oct, 2024
-    
-                            <br>
-                            <!-- <a href="https://mathcritique.github.io/">project page</a> / -->
-                            <a href="https://github.com/hewei2001/ReachQA">codes</a> /
-                            <a href="https://arxiv.org/abs/2410.18798">paper</a> /
-                            <a href="https://huggingface.co/datasets/hewei2001/ReachQA">dataset</a> 
-    
-                            <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
-    
-    
-                            <!-- <p></p> -->
-                            <!-- <p> -->
-                                <!-- Training large language models (LLMs) to spend more time thinking and reflection before responding is crucial for effectively solving complex reasoning tasks in fields such as science, coding, and mathematics. However, the effectiveness of mechanisms like self-reflection and self-correction depends on the model's capacity to accurately assess its own performance, which can be limited by factors such as initial accuracy, question difficulty, and the lack of external feedback. In this paper, we delve into a two-player paradigm that separates the roles of reasoning and critique models, where the critique model provides step-level feedback to supervise the reasoning (actor) model during both test-time and training-time. We first propose AutoMathCritique, an automated and scalable framework for collecting critique data, resulting in a dataset of $76,321$ responses paired with step-level feedback. Fine-tuning language models with this dataset enables them to generate natural language feedback for mathematical reasoning. We demonstrate that the critique models consistently improve the actor's performance on difficult queries at test-time, especially when scaling up inference-time computation. Motivated by these findings, we introduce the critique-based supervision to the actor's self-training process, and propose a critique-in-the-loop self-improvement method. Experiments show that the method improves the actor's exploration efficiency and solution diversity, especially on challenging queries, leading to a stronger reasoning model. Lastly, we take the preliminary step to explore training self-talk reasoning models via critique supervision and showcase their potential. -->
-    
-                            <!-- </p> -->
-                            <!-- <p>
-                            </p> -->
-                        </td>
-                    </tr>
-
 
 
 
                 <tr onmouseout="agentgym_stop()" onmouseover="agentgym_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='agentgym_image'>
                                 <img src='images/agentgym_image.jpg' width="190">
@@ -251,8 +154,8 @@
 
                             agentgym_stop()
                         </script>
-                    </td> -->
-                    <td style="padding:20px;width:100%;vertical-align:middle">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://arxiv.org/abs/2406.04151">
                             <span class="papertitle">AgentGym: Evolving Large Language Model-based Agents across Diverse Environments</span>
                         </a>
@@ -273,77 +176,24 @@
                         <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
 
 
-                        <!-- <p></p> -->
-                        <!-- <p> -->
+                        <p></p>
+                        <p>
 <!--                            In this paper, we take the first step towards building generally-capable LLM-based agents with self-evolution ability.-->
-                            <!-- We propose <strong>AgentGym</strong>, a framework designed to help the community easily evaluate and develop generally-capable LLM-based agents. It features diverse interactive environments and tasks with a unified format. It supports real-time feedback and concurrency, and is easily scalable. -->
-                            <!-- It also includes a high-quality trajectory set <strong>AgentTraj</strong> and a benchmark suite <strong>AgentEval</strong>. -->
+                            We propose <strong>AgentGym</strong>, a framework designed to help the community easily evaluate and develop generally-capable LLM-based agents. It features diverse interactive environments and tasks with a unified format. It supports real-time feedback and concurrency, and is easily scalable.
+                            It also includes a high-quality trajectory set <strong>AgentTraj</strong> and a benchmark suite <strong>AgentEval</strong>.
 <!--                            In this paper, we propose <strong>\(R^3\)</strong>:-->
 <!--                            Learning Reasoning through Reverse Curriculum Reinforcement Learning (RL),-->
 <!--                            a novel method that employs only outcome supervision to achieve the benefits of process supervision for large language models.-->
 
-                        <!-- </p> -->
-                        <!-- <p> -->
-                            <!-- To study the evolution potential of general LLM-based agents, we propose a novel method, <strong>AgentEvol</strong>, to investigate the potential of agent self-evolution beyond previously seen data across tasks and environments. -->
-                        <!-- </p> -->
-                        <!-- <p></p> -->
+                        </p>
+                        <p>
+                            To study the evolution potential of general LLM-based agents, we propose a novel method, <strong>AgentEvol</strong>, to investigate the potential of agent self-evolution beyond previously seen data across tasks and environments.
+                        </p>
                     </td>
                 </tr>
-
-                <tr onmouseout="RMB_stop()" onmouseover="RMB_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
-                        <div class="one">
-                            <div class="two" id='mathcritique_image.jpg'>
-                                <img src='images/mathcritique_image.jpg' width="190">
-                            </div>
-                            <img src='images/mathcritique_image.jpg' width="190">
-                        </div>
-                        <script type="text/javascript">
-                            function mathcritique_start() {
-                                document.getElementById('mathcritique_image').style.opacity = "1";
-                            }
-
-                            function mathcritique_stop() {
-                                document.getElementById('mathcritique_image').style.opacity = "0";
-                            }
-
-                            mathcritique_stop()
-                        </script>
-                    </td> -->
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                        <a href="https://arxiv.org/abs/2410.09893">
-                            <span class="papertitle">RMB: Comprehensively Benchmarking Reward Models in LLM Alignment
-
-                            </span>
-                        </a>
-                        <br>
-                        Enyu Zhou*, Guodong Zheng*, Binghai Wang*, <strong>Zhiheng Xi</strong>, Shihan Dou, Rong Bao, Wei Shen, Limao Xiong, Jessica Fan, Yurong Mou, Rui Zheng, Tao Gui, Qi Zhang, Xuanjing Huang                           
-                        <em>Preprint.</em> Oct, 2024
-
-                        <br>
-                        <!-- <a href="https://mathcritique.github.io/">project page</a> / -->
-                        <a href="https://github.com/Zhou-Zoey/RMB-Reward-Model-Benchmark">codes</a> /
-                        <a href="https://arxiv.org/abs/2410.09893">paper</a> 
-                        <!-- <a href="https://huggingface.co/datasets/hewei2001/ReachQA">dataset</a> / -->
-
-                        <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
-
-
-                        <!-- <p></p> -->
-                        <!-- <p> -->
-                            <!-- Training large language models (LLMs) to spend more time thinking and reflection before responding is crucial for effectively solving complex reasoning tasks in fields such as science, coding, and mathematics. However, the effectiveness of mechanisms like self-reflection and self-correction depends on the model's capacity to accurately assess its own performance, which can be limited by factors such as initial accuracy, question difficulty, and the lack of external feedback. In this paper, we delve into a two-player paradigm that separates the roles of reasoning and critique models, where the critique model provides step-level feedback to supervise the reasoning (actor) model during both test-time and training-time. We first propose AutoMathCritique, an automated and scalable framework for collecting critique data, resulting in a dataset of $76,321$ responses paired with step-level feedback. Fine-tuning language models with this dataset enables them to generate natural language feedback for mathematical reasoning. We demonstrate that the critique models consistently improve the actor's performance on difficult queries at test-time, especially when scaling up inference-time computation. Motivated by these findings, we introduce the critique-based supervision to the actor's self-training process, and propose a critique-in-the-loop self-improvement method. Experiments show that the method improves the actor's exploration efficiency and solution diversity, especially on challenging queries, leading to a stronger reasoning model. Lastly, we take the preliminary step to explore training self-talk reasoning models via critique supervision and showcase their potential. -->
-
-                        <!-- </p> -->
-                        <!-- <p>
-                        </p> -->
-                    </td>
-                </tr>
-
-
-
 
                 <tr onmouseout="R3_stop()" onmouseover="R3_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='R3_image'>
                                 <img src='images/R3_image.jpg' width="190">
@@ -361,8 +211,8 @@
 
                             R3_stop()
                         </script>
-                    </td> -->
-                    <td style="padding:20px;width:100%;vertical-align:middle">
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://arxiv.org/abs/2402.05808">
                             <span class="papertitle">Training Large Language Models for Reasoning through Reverse Curriculum Reinforcement Learning</span>
                         </a>
@@ -380,21 +230,21 @@
                         <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
 
                         <a href="https://arxiv.org/abs/2402.05808">paper</a>
-                        <!-- <p></p> -->
-                        <!-- <p>
+                        <p></p>
+                        <p>
 
                             In this paper, we propose <strong>\(R^3\)</strong>:
                             Learning Reasoning through Reverse Curriculum Reinforcement Learning (RL),
                             a novel method that employs only outcome supervision to achieve the benefits of process supervision for large language models.
 
-                        </p> -->
+                        </p>
                     </td>
                 </tr>
 
 
                 <!-- <tr onmouseout="llm_agent_survey_stop()" onmouseover="llm_agent_survey_start()"  bgcolor="#ffffd0"> -->
                 <tr onmouseout="llm_agent_survey_stop()" onmouseover="llm_agent_survey_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='llm_agent_survey_image'>
                                 <img src='images/llm_agent_survey.jpg' width="190">
@@ -412,7 +262,7 @@
 
                             llm_agent_survey_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://arxiv.org/abs/2309.07864">
                             <span class="papertitle">The Rise and Potential of Large Language Model Based Agents: A Survey</span>
@@ -426,7 +276,7 @@
                         <br>
                         <!--          preprint.-->
                         <!--           <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
-                        <em>SCIENCE CHINA Information Sciences (SCIS) .</em> September, 2023
+                        <em>Preprint.</em> September, 2023
 
                         <br>
                         <a href="https://github.com/WooooDyy/LLM-Agent-Paper-List">project page</a>
@@ -434,22 +284,22 @@
                         <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
 
                         <a href="https://arxiv.org/abs/2309.07864">paper</a>
-                        <!-- <p></p> -->
-                        <!-- <p> -->
+                        <p></p>
+                        <p>
 
-                            <!-- In this paper, we provide a comprehensive survey of LLM-based agents with <strong>86 -->
-                            <!-- pages</strong>. -->
-                            <!-- We start by tracing the concept of agents from its philosophical origins to its development -->
-                            <!-- in AI. -->
-                            <!-- Next, the main body includes the construction of LLM-based agents, its extensive -->
-                            <!-- applications, and the essential concept of Agent society. -->
+                            In this paper, we provide a comprehensive survey of LLM-based agents with <strong>86
+                            pages</strong>.
+                            We start by tracing the concept of agents from its philosophical origins to its development
+                            in AI.
+                            Next, the main body includes the construction of LLM-based agents, its extensive
+                            applications, and the essential concept of Agent society.
                             <!--          Next we present a conceptual framework for LLM-based agents, comprising three main components: brain, perception, and action.-->
                             <!--          Subsequently, we explore the applications of LLM-based agents in three aspects: single-agent scenarios, multi-agent scenarios, and human-agent cooperation.-->
                             <!--          Following this, we delve into agent societies-->
-                            <!-- Finally, we discuss a range of key topics and open problems within the field, e.g., scaling -->
-                            <!-- number of agentsand Agent-as-a-service. -->
+                            Finally, we discuss a range of key topics and open problems within the field, e.g., scaling
+                            number of agentsand Agent-as-a-service.
 
-                        <!-- </p> -->
+                        </p>
                     </td>
                 </tr>
 
@@ -457,7 +307,7 @@
 
 
                 <tr onmouseout="self_polish_stop()" onmouseover="self_polish_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='self_polish_image'>
                                 <img src='images/self_polish.jpg' width="190">
@@ -475,7 +325,7 @@
 
                             self_polish_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://arxiv.org/abs/2305.14497">
                             <span class="papertitle">Self-Polish: Enhance Reasoning in Large Language Models via Problem Refinement</span>
@@ -493,20 +343,20 @@
                         <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
 
                         <a href="https://arxiv.org/abs/2305.14497">paper</a>
-                        <!-- <p></p> -->
-                        <!-- <p> -->
-                            <!-- Different from previous work like Chain-of-Thought (CoT) which enhance LLMs' reasoning -->
-                            <!-- performance from the <strong> answer/reasoning side </strong>, -->
-                            <!-- we start from the <strong> problem side </strong> and propose Self-Polish (SP). -->
-                            <!-- It is a novel method that facilitates the model’s reasoning by guiding it to progressively -->
-                            <!-- refine the given problems to be more comprehensible and solvable. -->
-                        <!-- </p> -->
+                        <p></p>
+                        <p>
+                            Different from previous work like Chain-of-Thought (CoT) which enhance LLMs' reasoning
+                            performance from the <strong> answer/reasoning side </strong>,
+                            we start from the <strong> problem side </strong> and propose Self-Polish (SP).
+                            It is a novel method that facilitates the model’s reasoning by guiding it to progressively
+                            refine the given problems to be more comprehensible and solvable.
+                        </p>
                     </td>
                 </tr>
 
 
                 <tr onmouseout="copate_stop()" onmouseover="copate_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='copate_image'>
                                 <img src='images/copate.jpg' width="190">
@@ -524,7 +374,7 @@
 
                             copate_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://aclanthology.org/2023.findings-acl.759/">
                             <span class="papertitle">Connectivity Patterns are Task Embeddings</span>
@@ -542,22 +392,22 @@
                         <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
 
                         <a href="https://aclanthology.org/2023.findings-acl.759/">paper</a>
-                        <!-- <p></p> -->
-                        <!-- <p> -->
-                            <!-- In this work, we draw inspiration from the operating mechanism of deep neural networks -->
-                            <!-- (DNNs) and biological brains, -->
-                            <!-- where neuronal activations are sparse and task-specific, -->
-                            <!-- and we use the connectivity patterns of neurons as a unique identifier (<strong>Task -->
-                            <!-- Embeddings</strong>) associated with the task. -->
-                            <!-- Experiments show that our method consistently outperforms other baselines in predicting -->
-                            <!-- inter-task transferability across data regimes and transfer settings, -->
-                            <!-- while keeping high efficiency in computation and storage. -->
-                        <!-- </p> -->
+                        <p></p>
+                        <p>
+                            In this work, we draw inspiration from the operating mechanism of deep neural networks
+                            (DNNs) and biological brains,
+                            where neuronal activations are sparse and task-specific,
+                            and we use the connectivity patterns of neurons as a unique identifier (<strong>Task
+                            Embeddings</strong>) associated with the task.
+                            Experiments show that our method consistently outperforms other baselines in predicting
+                            inter-task transferability across data regimes and transfer settings,
+                            while keeping high efficiency in computation and storage.
+                        </p>
                     </td>
                 </tr>
 
                 <tr onmouseout="early_robust_stop()" onmouseover="early_robust_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='early_robust_image'>
                                 <img src='images/early_robust.jpg' width="190">
@@ -575,7 +425,7 @@
 
                             early_robust_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://aclanthology.org/2022.emnlp-main.569/">
                             <span class="papertitle">Efficient Adversarial Training with Robust Early-Bird Tickets</span>
@@ -592,22 +442,22 @@
                         <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
 
                         <a href="https://aclanthology.org/2022.emnlp-main.569/">paper</a>
-                        <!-- <p></p> -->
-                        <!-- <p> -->
-                            <!-- Adversarial training, a strong algorithm to enhance model robustness, is typically more -->
-                            <!-- expensive than traditional fine-tuning because of the necessity to generate adversarial -->
-                            <!-- examples via gradient descent. -->
-                            <!-- Delving into the optimization process of adversarial training, -->
-                            <!-- we find that robust connectivity patterns emerge in the early training phase (typically -->
-                            <!-- 0.15~0.3 epochs), far before parameters converge. -->
-                            <!-- Inspired by this finding, we dig out <strong>robust early-bird tickets (i.e., -->
-                            <!-- subnetworks)</strong> to develop an efficient adversarial training method. -->
-                        <!-- </p> -->
+                        <p></p>
+                        <p>
+                            Adversarial training, a strong algorithm to enhance model robustness, is typically more
+                            expensive than traditional fine-tuning because of the necessity to generate adversarial
+                            examples via gradient descent.
+                            Delving into the optimization process of adversarial training,
+                            we find that robust connectivity patterns emerge in the early training phase (typically
+                            0.15~0.3 epochs), far before parameters converge.
+                            Inspired by this finding, we dig out <strong>robust early-bird tickets (i.e.,
+                            subnetworks)</strong> to develop an efficient adversarial training method.
+                        </p>
                     </td>
                 </tr>
 
                 <tr onmouseout="robust_data_stop()" onmouseover="robust_data_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='robust_data_image'>
                                 <img src='images/robust_data.jpg' width="190">
@@ -625,13 +475,13 @@
 
                             robust_data_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://aclanthology.org/2023.findings-acl.146/">
                             <span class="papertitle">Characterizing the Impacts of Instances on Robustness</span>
                         </a>
                         <br>
-                        Rui Zheng*, <strong>Zhiheng Xi* (Co-first Author)</strong>, Qin Liu, Wenbin Lai, Tao Gui, Qi
+                        Rui Zheng, <strong>Zhiheng Xi (Co-first Author)</strong>, Qin Liu, Wenbin Lai, Tao Gui, Qi
                         Zhang, Xuanjing Huang, Jin Ma, Ying Shan, Weifeng Ge
                         <br>
                         <em>ACL 2023 Findings.</em>
@@ -643,7 +493,7 @@
                         <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
 
                         <a href="https://aclanthology.org/2023.findings-acl.146/">paper</a>
-                        <!-- <p></p>
+                        <p></p>
                         <p>
 
                             In this paper, we show that robust and non-robust instances in the training dataset,
@@ -654,12 +504,12 @@
                             Surprisingly, we find that the model under standard training easily overfits the robust instances
                             by relying on their simple patterns before the model completely learns their robust features.
                             Finally, we propose a new mitigation algorithm to further release the potential of robust instances.
-                        </p> -->
+                        </p>
                     </td>
                 </tr>
 
                 <tr onmouseout="group_invariant_alignment_stop()" onmouseover="group_invariant_alignment_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='group_invariant_alignment_image'>
                                 <img src='images/group_invariant_alignment.jpg' width="190">
@@ -677,7 +527,7 @@
 
                             group_invariant_alignment_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://arxiv.org/abs/2310.11971">
                             <span class="papertitle">Improving Generalization of Alignment with Human Preferences through Group Invariant Learning</span>
@@ -691,15 +541,15 @@
                         <a href="https://arxiv.org/abs/2310.11971">codes</a>
                         /
                         <a href="https://arxiv.org/abs/2310.11971">paper</a>
-                        <!-- <p></p>
+                        <p></p>
                         <p>
                         In this work, we propose a novel approach that can learn a consistent policy via RL across various data groups or domains. Given the challenges associated with acquiring group annotations, our method automatically classifies data into different groups, deliberately maximizing performance variance. Then, we optimize the policy to perform well on challenging groups. Lastly, leveraging the established groups, our approach adaptively adjusts the exploration space, allocating more learning capacity to more challenging data and preventing the model from over-optimizing on simpler data.
-                        </p> -->
+                        </p>
                     </td>
             </tr>
 
                 <tr onmouseout="easy_jailbreak_stop()" onmouseover="easy_jailbreak_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='easy_jailbreak_image'>
                                 <img src='images/easy_jailbreak.jpg' width="190">
@@ -717,7 +567,7 @@
 
                             easy_jailbreak_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://arxiv.org/abs/2403.12171">
                             <span class="papertitle">EasyJailbreak: A Unified Framework for Jailbreaking Large Language Models</span>
@@ -731,18 +581,18 @@
                         <a href="https://github.com/EasyJailbreak/EasyJailbreak?tab=readme-ov-file">project page</a>
                         /
                         <a href="https://arxiv.org/abs/2403.12171">paper</a>
-                        <!-- <p></p>
+                        <p></p>
                         <p>
                         EasyJailbreak is an easy-to-use Python framework designed for researchers and developers focusing on LLM security. Specifically, EasyJailbreak decomposes the mainstream jailbreaking process into several iterable steps:
                             initialize mutation seeds, select suitable seeds, add constraint, mutate, attack, and evaluate.
                             On this basis, EasyJailbreak provides a component for each step, constructing a playground for further research and attempts. More details can be found in our paper.
-                        </p> -->
+                        </p>
                     </td>
             </tr>
 
 
                 <tr onmouseout="rlhf_rm_stop()" onmouseover="rlhf_rm_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='rlhf_rm_image'>
                                 <img src='images/rlhf_rm.jpg' width="190">
@@ -760,7 +610,7 @@
 
                             rlhf_rm_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://arxiv.org/abs/2401.06080">
                             <span class="papertitle">Secrets of RLHF in Large Language Models Part II: Reward Modeling</span>
@@ -774,18 +624,18 @@
                         <a href="https://arxiv.org/abs/2401.06080">codes</a>
                         /
                         <a href="https://arxiv.org/abs/2401.06080">paper</a>
-                        <!-- <p></p>
+                        <p></p>
                         <p>
                         In this report, we attempt to address issues of reward modeling in RLHF of LLMs.
                             (1) From a data perspective, we propose a method to measure the strength of preferences within the data,
                             based on a voting mechanism of multiple reward models.
                             (2) From an algorithmic standpoint, we introduce contrastive learning to enhance the ability of reward models to distinguish between chosen and rejected responses, thereby improving model generalization. Furthermore, we employ meta-learning to enable the reward model to maintain the ability to differentiate subtle differences in out-of-distribution samples.
-                        </p> -->
+                        </p>
                     </td>
                 </tr>
 
                 <tr onmouseout="rlhf_ppo_stop()" onmouseover="rlhf_ppo_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='rlhf_ppo_image'>
                                 <img src='images/rlhf_ppo.jpg' width="190">
@@ -803,7 +653,7 @@
 
                             rlhf_ppo_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://arxiv.org/abs/2307.04964">
                             <span class="papertitle">Secrets of RLHF in Large Language Models Part I: PPO</span>
@@ -817,17 +667,17 @@
                         <a href="https://arxiv.org/abs/2307.04964">codes</a>
                         /
                         <a href="https://arxiv.org/abs/2307.04964">paper</a>
-                        <!-- <p></p>
+                        <p></p>
                         <p>
                             In this technical report, we dissect the framework of RLHF, re-evaluate the inner workings of PPO,
                             and explore how the parts comprising PPO algorithms impact policy agent training. We identify policy constraints being the key factor for the effective implementation of the PPO algorithm. Therefore, we explore the PPO-max, an advanced version of PPO algorithm, to efficiently improve the training stability of the policy model.
                             Based on our main results, we perform a comprehensive analysis of RLHF abilities compared with SFT models and ChatGPT.
-                        </p> -->
+                        </p>
                     </td>
                 </tr>
 
                 <tr onmouseout="rocoins_stop()" onmouseover="rocoins_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                    <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='rocoins_image'>
                                 <img src='images/rocoins.jpg' width="190">
@@ -845,7 +695,7 @@
 
                             rocoins_stop()
                         </script>
-                    </td> -->
+                    </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="https://arxiv.org/abs/2402.16431">
                             <span class="papertitle">RoCoIns: Enhancing Robustness of Large Language Models through Code-Style Instructions</span>
@@ -858,12 +708,12 @@
 <!--                        <a href="https://github.com/EasyJailbreak/EasyJailbreak?tab=readme-ov-file">codes</a>-->
 <!--                        /-->
                         <a href="https://arxiv.org/abs/2402.16431">paper</a>
-                        <!-- <p></p>
+                        <p></p>
                         <p>
                         In this paper,
                             we utilize instructions in code style, which are more structural and less ambiguous, to replace typically natural language instructions. Through this conversion, we provide LLMs with more precise instructions and strengthen the robustness of LLMs. Moreover, under few-shot scenarios, we propose a novel method to compose in-context demonstrations using both clean and adversarial samples
                             ({adversarial context method}) to further boost the robustness of the LLMs.
-                        </p> -->
+                        </p>
                     </td>
             </tr>
 
