@@ -106,7 +106,7 @@
                             </script>
                         </td> -->
                         <td style="padding:20px;width:100%;vertical-align:middle">
-                            <a href="https://arxiv.org/pdf/2509.08755">
+                            <a href="https://arxiv.org/abs/2509.08755">
                                 <span class="papertitle">AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning</span>
                             </a>
                             <br>
@@ -117,7 +117,7 @@
                             <br>
                             <a href="https://AgentGym-RL.github.io/">project page</a> /
                             <a href="https://github.com/woooodyy/AgentGym-RL">codes</a> /
-                            <a href="https://arxiv.org/pdf/2509.08755">paper</a> 
+                            <a href="https://arxiv.org/abs/2509.08755">paper</a> 
                             <!-- <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k">dataset</a>  -->
     
                             <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
@@ -132,8 +132,54 @@
                             </p> -->
                         </td>
                     </tr>
+                <tr onmouseout="agentprm_stop()" onmouseover="agentprm_start()">
+                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                        <div class="one">
+                            <div class="two" id='mathcritique_image.jpg'>
+                                <img src='images/mathcritique_image.jpg' width="190">
+                            </div>
+                            <img src='images/mathcritique_image.jpg' width="190">
+                        </div>
+                        <script type="text/javascript">
+                            function mathcritique_start() {
+                                document.getElementById('mathcritique_image').style.opacity = "1";
+                            }
 
-                                    <tr onmouseout="agentgym_stop()" onmouseover="agentgym_start()">
+                            function mathcritique_stop() {
+                                document.getElementById('mathcritique_image').style.opacity = "0";
+                            }
+
+                            mathcritique_stop()
+                        </script>
+                    </td> -->
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2509.08755">
+                            <span class="papertitle">AgentPRM: Process Reward Models for LLM Agents via Step-Wise Promise and Progress</span>
+                        </a>
+                        <br>
+                        <strong>Zhiheng Xi</strong>, Chenyang Liao, Guanyu Li, Zhihao Zhang, Wenxiang Chen, Binghai Wang, Senjie Jin, Yuhao Zhou, Jian Guan, Wei Wu, Tao Ji, Tao Gui, Qi Zhang, Xuanjing Huang
+                        <br>
+                        <em>Preprint.</em> Jan, 2025
+
+                        <br>
+                        <!-- <a href="https://mathcritique.github.io/">project page</a> /
+                        <a href="https://github.com/WooooDyy/MathCritique">codes</a> /
+                        <a href="https://arxiv.org/abs/2411.16579">paper</a> /
+                        <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k">dataset</a>  -->
+
+                        <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
+
+
+                        <!-- <p></p> -->
+                        <!-- <p> -->
+                            <!-- Training large language models (LLMs) to spend more time thinking and reflection before responding is crucial for effectively solving complex reasoning tasks in fields such as science, coding, and mathematics. However, the effectiveness of mechanisms like self-reflection and self-correction depends on the model's capacity to accurately assess its own performance, which can be limited by factors such as initial accuracy, question difficulty, and the lack of external feedback. In this paper, we delve into a two-player paradigm that separates the roles of reasoning and critique models, where the critique model provides step-level feedback to supervise the reasoning (actor) model during both test-time and training-time. We first propose AutoMathCritique, an automated and scalable framework for collecting critique data, resulting in a dataset of $76,321$ responses paired with step-level feedback. Fine-tuning language models with this dataset enables them to generate natural language feedback for mathematical reasoning. We demonstrate that the critique models consistently improve the actor's performance on difficult queries at test-time, especially when scaling up inference-time computation. Motivated by these findings, we introduce the critique-based supervision to the actor's self-training process, and propose a critique-in-the-loop self-improvement method. Experiments show that the method improves the actor's exploration efficiency and solution diversity, especially on challenging queries, leading to a stronger reasoning model. Lastly, we take the preliminary step to explore training self-talk reasoning models via critique supervision and showcase their potential. -->
+
+                        <!-- </p> -->
+                        <!-- <p>
+                        </p> -->
+                    </td>
+                </tr>
+                    <tr onmouseout="agentgym_stop()" onmouseover="agentgym_start()">
                     <!-- <td style="padding:20px;width:30%;vertical-align:middle">
                         <div class="one">
                             <div class="two" id='agentgym_image'>
@@ -191,6 +237,69 @@
                     </td>
                 </tr>
 
+
+                <tr onmouseout="llm_agent_survey_stop()" onmouseover="llm_agent_survey_start()">
+                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                        <div class="one">
+                            <div class="two" id='llm_agent_survey_image'>
+                                <img src='images/llm_agent_survey.jpg' width="190">
+                            </div>
+                            <img src='images/llm_agent_survey.jpg' width="190">
+                        </div>
+                        <script type="text/javascript">
+                            function llm_agent_survey_start() {
+                                document.getElementById('llm_agent_survey_image').style.opacity = "1";
+                            }
+
+                            function llm_agent_survey_stop() {
+                                document.getElementById('llm_agent_survey_image').style.opacity = "0";
+                            }
+
+                            llm_agent_survey_stop()
+                        </script>
+                    </td> -->
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2309.07864">
+                            <span class="papertitle">The Rise and Potential of Large Language Model Based Agents: A Survey</span>
+                        </a>
+                        <br>
+                        <strong>Zhiheng Xi</strong>, Wenxiang Chen, Xin Guo, Wei He, Yiwen Ding, Boyang Hong, Ming
+                        Zhang, Junzhe Wang, Senjie Jin, Enyu Zhou, Rui Zheng, Xiaoran Fan, Xiao Wang, Limao Xiong, Qin
+                        Liu, Yuhao Zhou, Weiran Wang, Changhao Jiang, Yicheng Zou, Xiangyang Liu, Zhangyue Yin, Shihan
+                        Dou, Rongxiang Weng, Wensen Cheng, Qi Zhang, Wenjuan Qin, Yongyan Zheng, Xipeng Qiu, Xuanjing
+                        Huang, Tao Gui
+                        <br>
+                        <!--          preprint.-->
+                        <!--           <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
+                        <em>SCIENCE CHINA Information Sciences (SCIS), Cover Paper of SCIS Volume 68, Number 2, February 2025.</em> 
+                        <!-- <br>Preprint at September, 2023 -->
+
+                        <br>
+                        <a href="https://github.com/WooooDyy/LLM-Agent-Paper-List">project page</a>
+                        /
+                        <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
+
+                        <a href="https://arxiv.org/abs/2309.07864">paper</a>
+                        <!-- <p></p> -->
+                        <!-- <p> -->
+
+                            <!-- In this paper, we provide a comprehensive survey of LLM-based agents with <strong>86 -->
+                            <!-- pages</strong>. -->
+                            <!-- We start by tracing the concept of agents from its philosophical origins to its development -->
+                            <!-- in AI. -->
+                            <!-- Next, the main body includes the construction of LLM-based agents, its extensive -->
+                            <!-- applications, and the essential concept of Agent society. -->
+                            <!--          Next we present a conceptual framework for LLM-based agents, comprising three main components: brain, perception, and action.-->
+                            <!--          Subsequently, we explore the applications of LLM-based agents in three aspects: single-agent scenarios, multi-agent scenarios, and human-agent cooperation.-->
+                            <!--          Following this, we delve into agent societies-->
+                            <!-- Finally, we discuss a range of key topics and open problems within the field, e.g., scaling -->
+                            <!-- number of agentsand Agent-as-a-service. -->
+
+                        <!-- </p> -->
+                    </td>
+                </tr>
+
+
                     <tr onmouseout="bmmr_stop()" onmouseover="bmmr_start()">
                         <!-- <td style="padding:20px;width:30%;vertical-align:middle">
                             <div class="one">
@@ -225,6 +334,54 @@
                             <a href="https://github.com/woooodyy/BMMR">codes</a> /
                             <a href="https://arxiv.org/abs/2507.03483">paper</a> /
                             <a href="https://huggingface.co/datasets/guanyu615/BMMR">dataset</a> 
+    
+                            <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
+    
+    
+                            <!-- <p></p> -->
+                            <!-- <p> -->
+                                <!-- Training large language models (LLMs) to spend more time thinking and reflection before responding is crucial for effectively solving complex reasoning tasks in fields such as science, coding, and mathematics. However, the effectiveness of mechanisms like self-reflection and self-correction depends on the model's capacity to accurately assess its own performance, which can be limited by factors such as initial accuracy, question difficulty, and the lack of external feedback. In this paper, we delve into a two-player paradigm that separates the roles of reasoning and critique models, where the critique model provides step-level feedback to supervise the reasoning (actor) model during both test-time and training-time. We first propose AutoMathCritique, an automated and scalable framework for collecting critique data, resulting in a dataset of $76,321$ responses paired with step-level feedback. Fine-tuning language models with this dataset enables them to generate natural language feedback for mathematical reasoning. We demonstrate that the critique models consistently improve the actor's performance on difficult queries at test-time, especially when scaling up inference-time computation. Motivated by these findings, we introduce the critique-based supervision to the actor's self-training process, and propose a critique-in-the-loop self-improvement method. Experiments show that the method improves the actor's exploration efficiency and solution diversity, especially on challenging queries, leading to a stronger reasoning model. Lastly, we take the preliminary step to explore training self-talk reasoning models via critique supervision and showcase their potential. -->
+    
+                            <!-- </p> -->
+                            <!-- <p>
+                            </p> -->
+                        </td>
+                    </tr>
+
+                    <tr onmouseout="critiquerl_stop()" onmouseover="critiquerl_start()">
+                        <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                            <div class="one">
+                                <div class="two" id='mathcritique_image.jpg'>
+                                    <img src='images/mathcritique_image.jpg' width="190">
+                                </div>
+                                <img src='images/mathcritique_image.jpg' width="190">
+                            </div>
+                            <script type="text/javascript">
+                                function mathcritique_start() {
+                                    document.getElementById('mathcritique_image').style.opacity = "1";
+                                }
+    
+                                function mathcritique_stop() {
+                                    document.getElementById('mathcritique_image').style.opacity = "0";
+                                }
+    
+                                mathcritique_stop()
+                            </script>
+                        </td> -->
+                        <td style="padding:20px;width:100%;vertical-align:middle">
+                            <a href="https://arxiv.org/abs/2411.16579">
+                                <span class="papertitle">Training Language Models for Critiquing through Reinforcement Learning</span>
+                            </a>
+                            <br>
+                            <strong>Zhiheng Xi</strong>, Jixuan Huang, Xin Guo, Boyang Hong, Dingwen Yang, Xiaoran Fan, Shuo Li, Zehui Chen, Junjie Ye, Siyu Yuan, Zhengyin Du, Xuesong Yao, Yufei Xu, Jiecao Chen, Rui Zheng, Tao Gui, Qi Zhang, Xuanjing Huang
+                            <br>
+                            <em>Preprint.</em> Feb, 2025
+    
+                            <br>
+                            <!-- <a href="https://mathcritique.github.io/">project page</a> /
+                            <a href="https://github.com/WooooDyy/MathCritique">codes</a> /
+                            <a href="https://arxiv.org/abs/2411.16579">paper</a> /
+                            <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k">dataset</a>  -->
     
                             <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
     
@@ -286,6 +443,55 @@
                             </p> -->
                         </td>
                     </tr>
+
+                    <tr onmouseout="R3_stop()" onmouseover="R3_start()">
+                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
+                        <div class="one">
+                            <div class="two" id='R3_image'>
+                                <img src='images/R3_image.jpg' width="190">
+                            </div>
+                            <img src='images/R3_image.jpg' width="190">
+                        </div>
+                        <script type="text/javascript">
+                            function R3_start() {
+                                document.getElementById('R3_image').style.opacity = "1";
+                            }
+
+                            function R3_stop() {
+                                document.getElementById('R3_image').style.opacity = "0";
+                            }
+
+                            R3_stop()
+                        </script>
+                    </td> -->
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <a href="https://arxiv.org/abs/2402.05808">
+                            <span class="papertitle">Training Large Language Models for Reasoning through Reverse Curriculum Reinforcement Learning</span>
+                        </a>
+                        <br>
+                        <strong>Zhiheng Xi</strong>, Wenxiang Chen, Boyang Hong, Senjie Jin, Rui Zheng, Wei He, Yiwen Ding, Shichun Liu, Xin Guo, Junzhe Wang, Honglin Guo, Wei Shen, Xiaoran Fan, Yuhao Zhou, Shihan Dou, Xiao Wang, Xinbo Zhang, Peng Sun, Tao Gui, Qi Zhang, Xuanjing Huang
+
+                        <br>
+                        <!--          preprint.-->
+                        <!--           <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
+                        <em>ICML 2024; CIPS-LMG 2024 Outstanding Poster</em>
+
+                        <br>
+                        <a href="https://github.com/WooooDyy/LLM-Reverse-Curriculum-RL">codes</a>
+                        /
+                        <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
+
+                        <a href="https://arxiv.org/abs/2402.05808">paper</a>
+                        <!-- <p></p> -->
+                        <!-- <p>
+
+                            In this paper, we propose <strong>\(R^3\)</strong>:
+                            Learning Reasoning through Reverse Curriculum Reinforcement Learning (RL),
+                            a novel method that employs only outcome supervision to achieve the benefits of process supervision for large language models.
+
+                        </p> -->
+                    </td>
+                </tr>
 
 
                     <tr onmouseout="GSI_stop()" onmouseover="GSI_start()">
@@ -441,118 +647,9 @@
 
 
 
-                <tr onmouseout="R3_stop()" onmouseover="R3_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
-                        <div class="one">
-                            <div class="two" id='R3_image'>
-                                <img src='images/R3_image.jpg' width="190">
-                            </div>
-                            <img src='images/R3_image.jpg' width="190">
-                        </div>
-                        <script type="text/javascript">
-                            function R3_start() {
-                                document.getElementById('R3_image').style.opacity = "1";
-                            }
-
-                            function R3_stop() {
-                                document.getElementById('R3_image').style.opacity = "0";
-                            }
-
-                            R3_stop()
-                        </script>
-                    </td> -->
-                    <td style="padding:20px;width:100%;vertical-align:middle">
-                        <a href="https://arxiv.org/abs/2402.05808">
-                            <span class="papertitle">Training Large Language Models for Reasoning through Reverse Curriculum Reinforcement Learning</span>
-                        </a>
-                        <br>
-                        <strong>Zhiheng Xi</strong>, Wenxiang Chen, Boyang Hong, Senjie Jin, Rui Zheng, Wei He, Yiwen Ding, Shichun Liu, Xin Guo, Junzhe Wang, Honglin Guo, Wei Shen, Xiaoran Fan, Yuhao Zhou, Shihan Dou, Xiao Wang, Xinbo Zhang, Peng Sun, Tao Gui, Qi Zhang, Xuanjing Huang
-
-                        <br>
-                        <!--          preprint.-->
-                        <!--           <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
-                        <em>ICML 2024; CIPS-LMG 2024 Outstanding Poster</em>
-
-                        <br>
-                        <a href="https://github.com/WooooDyy/LLM-Reverse-Curriculum-RL">codes</a>
-                        /
-                        <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
-
-                        <a href="https://arxiv.org/abs/2402.05808">paper</a>
-                        <!-- <p></p> -->
-                        <!-- <p>
-
-                            In this paper, we propose <strong>\(R^3\)</strong>:
-                            Learning Reasoning through Reverse Curriculum Reinforcement Learning (RL),
-                            a novel method that employs only outcome supervision to achieve the benefits of process supervision for large language models.
-
-                        </p> -->
-                    </td>
-                </tr>
 
 
                 <!-- <tr onmouseout="llm_agent_survey_stop()" onmouseover="llm_agent_survey_start()"  bgcolor="#ffffd0"> -->
-                <tr onmouseout="llm_agent_survey_stop()" onmouseover="llm_agent_survey_start()">
-                    <!-- <td style="padding:20px;width:30%;vertical-align:middle">
-                        <div class="one">
-                            <div class="two" id='llm_agent_survey_image'>
-                                <img src='images/llm_agent_survey.jpg' width="190">
-                            </div>
-                            <img src='images/llm_agent_survey.jpg' width="190">
-                        </div>
-                        <script type="text/javascript">
-                            function llm_agent_survey_start() {
-                                document.getElementById('llm_agent_survey_image').style.opacity = "1";
-                            }
-
-                            function llm_agent_survey_stop() {
-                                document.getElementById('llm_agent_survey_image').style.opacity = "0";
-                            }
-
-                            llm_agent_survey_stop()
-                        </script>
-                    </td> -->
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                        <a href="https://arxiv.org/abs/2309.07864">
-                            <span class="papertitle">The Rise and Potential of Large Language Model Based Agents: A Survey</span>
-                        </a>
-                        <br>
-                        <strong>Zhiheng Xi</strong>, Wenxiang Chen, Xin Guo, Wei He, Yiwen Ding, Boyang Hong, Ming
-                        Zhang, Junzhe Wang, Senjie Jin, Enyu Zhou, Rui Zheng, Xiaoran Fan, Xiao Wang, Limao Xiong, Qin
-                        Liu, Yuhao Zhou, Weiran Wang, Changhao Jiang, Yicheng Zou, Xiangyang Liu, Zhangyue Yin, Shihan
-                        Dou, Rongxiang Weng, Wensen Cheng, Qi Zhang, Wenjuan Qin, Yongyan Zheng, Xipeng Qiu, Xuanjing
-                        Huang, Tao Gui
-                        <br>
-                        <!--          preprint.-->
-                        <!--           <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>-->
-                        <em>SCIENCE CHINA Information Sciences (SCIS), Cover Paper of SCIS Volume 68, Number 2, February 2025.</em> 
-                        <!-- <br>Preprint at September, 2023 -->
-
-                        <br>
-                        <a href="https://github.com/WooooDyy/LLM-Agent-Paper-List">project page</a>
-                        /
-                        <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
-
-                        <a href="https://arxiv.org/abs/2309.07864">paper</a>
-                        <!-- <p></p> -->
-                        <!-- <p> -->
-
-                            <!-- In this paper, we provide a comprehensive survey of LLM-based agents with <strong>86 -->
-                            <!-- pages</strong>. -->
-                            <!-- We start by tracing the concept of agents from its philosophical origins to its development -->
-                            <!-- in AI. -->
-                            <!-- Next, the main body includes the construction of LLM-based agents, its extensive -->
-                            <!-- applications, and the essential concept of Agent society. -->
-                            <!--          Next we present a conceptual framework for LLM-based agents, comprising three main components: brain, perception, and action.-->
-                            <!--          Subsequently, we explore the applications of LLM-based agents in three aspects: single-agent scenarios, multi-agent scenarios, and human-agent cooperation.-->
-                            <!--          Following this, we delve into agent societies-->
-                            <!-- Finally, we discuss a range of key topics and open problems within the field, e.g., scaling -->
-                            <!-- number of agentsand Agent-as-a-service. -->
-
-                        <!-- </p> -->
-                    </td>
-                </tr>
-
 
 
 
