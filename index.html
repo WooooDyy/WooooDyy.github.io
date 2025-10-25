@@ -70,7 +70,7 @@
                     <td style="padding:20px;width:100%;vertical-align:middle">
                         <h2>Research</h2>
                         <p>
-                            I have general interest in deep learning and natural language processing. Recently, I focus my research on language agents, RL for LLM reasoning, and scalable oversight.
+                            I have general interest in deep learning and natural language processing. Recently, I focus my research on LLM agents, RL for LLM reasoning, and scalable oversight.
                             <!-- Representative papers are <span class="highlight">highlighted</span>. -->
                         </p>
                     </td>
@@ -82,8 +82,35 @@
 
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
-
-                    <tr onmouseout="agentgymrl_stop()" onmouseover="agentgymrl_start()">
+                                        <tr onmouseout="bapo_stop()" onmouseover="bapo_start()">
+                        <td style="padding:20px;width:100%;vertical-align:middle">
+                            <a href="https://arxiv.org/abs/2510.18927">
+                                <span class="papertitle">BAPO: Stabilizing Off-Policy Reinforcement Learning for LLMs via Balanced Policy Optimization with Adaptive Clipping</span>
+                            </a>
+                            <br>
+                            <strong>Zhiheng Xi</strong>, Xin Guo, Yang Nan, Enyu Zhou, Junrui Shen, Wenxiang Chen, Jiaqi Liu, Jixuan Huang, Zhihao Zhang, Honglin Guo, Xun Deng, Zhikai Lei, Miao Zheng, Guoteng Wang, Shuo Zhang, Peng Sun, Rui Zheng, Hang Yan, Tao Gui, Qi Zhang, Xuanjing Huang
+                            <br>
+                            <em>Preprint.</em> Oct, 2025
+    
+                            <br>
+                            <!-- <a href="https://AgentGym-RL.github.io/">project page</a> / -->
+                            <a href="https://github.com/WooooDyy/BAPO">codes</a> /
+                            <a href="https://arxiv.org/abs/2510.18927">paper</a> 
+                            <!-- <a href="https://huggingface.co/datasets/MathCritique/MathCritique-76k">dataset</a>  -->
+    
+                            <!-- <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a> -->
+    
+    
+                            <!-- <p></p> -->
+                            <!-- <p> -->
+                                <!-- Training large language models (LLMs) to spend more time thinking and reflection before responding is crucial for effectively solving complex reasoning tasks in fields such as science, coding, and mathematics. However, the effectiveness of mechanisms like self-reflection and self-correction depends on the model's capacity to accurately assess its own performance, which can be limited by factors such as initial accuracy, question difficulty, and the lack of external feedback. In this paper, we delve into a two-player paradigm that separates the roles of reasoning and critique models, where the critique model provides step-level feedback to supervise the reasoning (actor) model during both test-time and training-time. We first propose AutoMathCritique, an automated and scalable framework for collecting critique data, resulting in a dataset of $76,321$ responses paired with step-level feedback. Fine-tuning language models with this dataset enables them to generate natural language feedback for mathematical reasoning. We demonstrate that the critique models consistently improve the actor's performance on difficult queries at test-time, especially when scaling up inference-time computation. Motivated by these findings, we introduce the critique-based supervision to the actor's self-training process, and propose a critique-in-the-loop self-improvement method. Experiments show that the method improves the actor's exploration efficiency and solution diversity, especially on challenging queries, leading to a stronger reasoning model. Lastly, we take the preliminary step to explore training self-talk reasoning models via critique supervision and showcase their potential. -->
+    
+                            <!-- </p> -->
+                            <!-- <p>
+                            </p> -->
+                        </td>
+                    </tr>
+                    <tr onmouseout="bapo_stop()" onmouseover="bapo_start()">
                         <!-- <td style="padding:20px;width:30%;vertical-align:middle">
                             <div class="one">
                                 <div class="two" id='mathcritique_image.jpg'>
